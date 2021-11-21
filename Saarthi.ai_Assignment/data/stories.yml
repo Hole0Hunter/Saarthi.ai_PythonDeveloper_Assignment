@@ -6,25 +6,60 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: after_greet_how_are_you
+  - action: utter_health_status
+  - intent: find_information_on_organization’s_services_and_products
+  - action: utter_info
+  - intent: scale_based_question
+  - action: utter_scalability
+  - intent: can_you_do_it
+  - action: utter_acceptance
+  - intent: requesting_contact_info
+  - action: utter_contact_info
+  - intent: thanks
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye
 
-- story: sad path 1
+- story: sad path
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: after_greet_how_are_you
+  - action: utter_health_status
+  - intent: find_information_on_organization’s_services_and_products
+  - action: utter_info
+  - intent: scale_based_question
+  - action: utter_scalability
+  - intent: can_you_do_it
+  - action: utter_acceptance
+  - intent: requesting_contact_info
+  - action: utter_contact_info
+  - intent: negative_feedback
+  - action: utter_rectify
+  - intent: goodbye
+  - action: utter_goodbye
 
-- story: sad path 2
+- story: simple greet and goodbye path
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
+  - intent: goodbye
+  - action: utter_goodbye
+  
+- story: simple greet path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: simplegoodbye path
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: simple thanks path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
   - action: utter_goodbye

@@ -2,11 +2,6 @@ version: "2.0"
 
 rules:
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
-
 - rule: Say HIGH SIR! anytime the user says 'how is the josh'
   steps:
   - intent: special_greets_and_statements
@@ -16,8 +11,3 @@ rules:
   steps:
   - intent: appretiation
   - action: utter_thanks_for_the_appretiation
-
-- rule: Say sorry if the user does not like the experience
-  steps:
-  - intent: negative_feedback
-  - action: utter_rectify
