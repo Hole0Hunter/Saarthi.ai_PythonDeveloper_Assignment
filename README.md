@@ -2,7 +2,6 @@
 <h3 align="center">Love exploring new stuff!</h3>
 
 - I have put up the solutions to the questions in the python developer assignment. **Saarthi.ai Python Developer Assignment**
-- Note: I have not worked on stories.yml since it was not necessary as per the questions given.
 - Tools used: Python, Pycharm, Spyder, Anaconda, Rasa
 
 <h3 align="left">Connect with me:</h3>
