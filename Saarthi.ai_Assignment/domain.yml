@@ -54,6 +54,9 @@ responses:
   utter_rectify:
   - text: "We will work on correcting our mistakes, sorry :("
  
+  utter_welcome:
+  - text: You're welcome! :)
+ 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
