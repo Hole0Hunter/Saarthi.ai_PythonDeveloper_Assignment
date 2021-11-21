@@ -1,0 +1,314 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hello my dear friend!
+    - let's go
+    - Hello Mate!
+    - Hello my friend
+    - hi friend
+    - Hey friend
+    - Good [Morning](time_of_day)!
+    - Good [Evening](time_of_day)!
+    
+- intent : special_greets_and_statements
+  examples: |
+    - How is the josh
+    
+- intent: after_greet_how_are_you
+  examples: |
+    - How you doin
+    - What is up
+    - How have you been
+    - How's your day
+    - How are you doing
+    - How is everything going on?
+    - Whats up
+    - How are you
+    - What's happening
+    - How was your day
+    - how are you recently !
+    - How is your day going?
+    - how are things going
+    - What is going on, go on!
+    - How are you today?
+    - wassup
+    - How's your day going
+
+- intent: greet + after_greet_how_are_you
+  examples: |
+    - Hello how you doing
+    - Hey whats going on
+    - Hey how are you
+    - Hello how are you
+ 
+- intent: find_information_on_organization’s_services_and_products
+  examples: |
+    - I am looking for a [sales and marketing](domain) chatbot.
+    - Do you provide service in [agriculture](domain) domain.
+    - tell me your capabilities
+    - what are you capable of
+    - Do you provide assistance in [sales marketing](domain)?
+    - what are the areas in which you provide service
+    - could you help me assist in [sales marketing](domain)?
+    - What is your purpose?
+    - My company works for [ecommerce](domain). Do you provide services in this domain?
+    - What's your skill?
+    - I am from [IT](domain) do you have experience in this domain
+    - How can you be of my help?
+    - for what purpose you are made
+    - tell me everything that you can do
+    - so tell me things which you can do
+    - Can i get a list of all the domains that you are involved in
+    - Do you make bots for [telecommunication](domain) domain?
+    - please provide me a brief information about all your domains
+    - What can you do for me?
+    - could you help me assist in [user onboarding](domain)?
+    - tell me what can you do?
+    - Can you provide me help in [Lead generation](domain)?
+    - I would like to know more about your capabilities
+    - Could you help me assist in [customer support](domain)?
+    - do you provide services for [sales marketing](domain)?
+    - What are your capabilities?
+    - Do you provide service in [healthcare](domain)
+    - Let me know if you guys work for [banking](domain).
+    - My company is in [agricultural product manufacturing](domain). do you have expertise in this?
+    - could you help me assist in [lead generation](domain)?
+    - what are your superpowers?
+    - what can you do?
+    - What all can you do?
+    - Which all things are you programmed for
+    - what other things you can do
+    - what all kind of enterprise functions you guys provide?
+    - Do you provide assistance in [Lead generation](domain)?
+    - would love to know your capabilities
+    - brief me about your abilities
+    - Can you provide me help in [Sales marketing](domain)?
+    - What are the things you can help me with
+    - I'm a small shop owner.. can you help me
+    - What else can you do?
+    - any specific domain that is the motto of your company.
+    - how can you serve me?
+    - Do you provide assistance in [customer support](domain)?
+    - What are your capabilities?
+    - Which scaled enterprizes do you provide your services?
+    - Tell me things you are programmed to do?
+    - Is there any specific domain you are active in?
+    - Do you work om [sales marketing](domain)?
+    - tell me averything that you can do
+    - Do you work in [user onboarding](domain)?
+    - tell me about your capabilties
+    - Do you provide service in [hospitality](domain) 
+    - I want to automate my [customer service](domain), do you provide such services 
+    - What domain is your company currently working for?
+    - How can you help me in [User onboarding](domain)?
+    - What are the things that you can do for me
+    - What can you do for me?
+    - How are you useful to me
+    - I need to know how you can help me out
+
+- intent: scale_based_question
+  examples: |
+    - Do you pick companies based on their scales?
+    - if you serve medium scale businesses then we can talk further
+    - What kind of enterprizes do you have worked with till now?
+    - Can i know the size of businesses you guys support
+    - Do you offer your serices to [medium sized](enterprise_scale) enterprises?
+    - Had Saarthi ever coordinated with [mid sized](enterprise_scale) companies? 
+    - Which size of enterprises do you serve usually?
+    - I have a [small scale](enterprise_scale) business need your help to grow it further
+    - Is there any chance of a [small sized](enterprise_scale) buisiness being served by your company?
+    - I am a startup having [20 employees](enterprise_scale). Does your company collaborate in such cases?
+    - Do you work for only [high scaled](enterprise_scale) businesses?
+    - How well do you cater to [large scaled](enterprise_scale) businesses?
+    - Do you serve [small scale](enterprise_scale) businesses?
+    - I have a [small](enterprise_scale) [food delivery business](domain) in my region, can you help me with that
+
+- intent: can_you_do_it
+  examples: |
+    - how can you solve my problem?
+    - can you solve my problem?
+    - what can you do to help me?
+    - Please let me know what can you do for me?
+    - How can you help me?
+    - How can you help me?
+    - How can you solve problem?
+    - can you help me?
+    - Please tell me how you can help me
+    
+    
+- intent: requesting_contact_info
+  examples: |
+    - Your contact details?
+    - I need to quickly connect over phone can you share number
+    - How can I reach out over e-mail
+    - Give your mail id details?
+    - Can you share with me contact number
+    - How can I speak with the team
+    - Show me contact number.
+    - tell me your email address
+    - How can I meet with the team.
+    - I have a requirement and want contact detail
+    - Show me contact details
+    - Can I talk to someone over a call
+    - Please give me your contact details.
+    - Can i get in contact with the customer support
+
+- intent: goodbye
+  examples: |
+    - take care
+    - bye
+    - Talk to you later
+    - have a good day
+    - bye bye
+    - See you soon
+    - see you
+    - Goodbye
+    - good bye
+    - see you round
+    - Adios
+    - au revoir
+    - Bye
+    - Asta la vista
+    - Gotta go
+    - laters
+    - Bubye
+    - Tata
+    - so long
+    - Later Alligator
+    - ok bye
+    - see ya
+    - See you around
+    - see you
+    - See you
+    - Got to go
+    - alrighty then
+    
+- intent: appretiation
+  examples: |
+    - Amazing
+    - appreciate it!
+    - Awesome
+    - you are on point
+    - well done
+    - I'm glad we met!
+    - You are perfect
+    - good job
+    - You're so great.
+    - its good to see how easily you handle things
+    - your work is to the point
+    - Dude you are smart!
+    - You are my best friend
+    - Superb
+    - great work
+    - I appreciate that
+    - I'm happy with that
+    - you are so Awesome !
+    - You are very cool!
+    - good job
+    - thats great
+    - you are always right
+    - You are so nice.
+    - You are so fast in resolving my queries... I am amazed!
+    - You are awesome
+    - You are supernatural!
+    - Its so convenient talking to you.
+    - Outstanding
+    - Fantastic
+    - You are awesome!
+    - Amazing!
+    - You're so thoughtful.
+    - that's great.
+
+- intent: affirm
+  examples: |
+    - yep
+    - yip
+    - yeh
+    - exactly
+    - Cool!
+    - sure
+    - spot on
+    - You got that right mate.
+    - indeed
+    - perfect
+    - sure
+    - you're right
+    - I'd say so
+    - um yeh
+    - uh huh
+    - alright
+    - totes
+    - I'd say yes
+    - correct
+    - yes it is clear
+    - yes
+    - alright
+    - ok
+    - You are right
+    - cool
+    - yep
+    - Bravo
+    - the sky is clear
+    - i am registered yes
+    - happy yes
+    - I'm in
+    - You can solve my problem!
+    
+- intent: thanks    
+  examples: |
+    - Thanks
+    - thanks a ton
+    - thanks a lot
+    - thnx
+    - thanks very much
+    - thanks
+    - thank you very much
+    - Thankyou
+    - tysm
+    - Thank You
+    - thanks for help
+    - ty
+
+- intent: negative_feedback
+  examples: |
+    - no one like you !
+    
+- intent: deny
+  examples: |
+    - nop
+    - no i am not
+    - No, I changed my mind.
+    - nope
+    - nay
+    - nope
+    - Nope
+    - nono
+    - no chance
+    - Nah
+    - naah
+    - No chance
+    - no way
+    - not a chance
+    - Not at all
+    - forget it
+    - not a chance
+    - forget it
+    - no chance
+    - Not possible
+    - no
+    - nope
+    - no way
+    - no nothing else
+    - the sky is not clear
+    - No, i want to check few things before that.
+    
+- intent: registration_status
+  examples: |
+    - yes i am registered
+    - i am not registered
+
+- intent: goodbye + thanks
+  examples: |
+    - thank you good bye

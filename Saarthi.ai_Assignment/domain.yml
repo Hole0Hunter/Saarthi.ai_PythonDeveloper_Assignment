@@ -1,0 +1,62 @@
+version: "2.0"
+
+intents:
+  - greet
+  - special_greets_and_statements
+  - after_greet_how_are_you
+  - greet + after_greet_how_are_you
+  - find_information_on_organization’s_services_and_products
+  - scale_based_question
+  - can_you_do_it
+  - requesting_contact_info
+  - goodbye
+  - appretiation
+  - affirm
+  - thanks
+  - negative_feedback
+  - deny
+  - registration_status
+  - goodbye + thanks
+  
+entities:
+  - time_of_day
+  - domain
+  - enterprise_scale
+
+responses:
+  utter_greet:
+  - text: "Hey!"
+
+  utter_highsir:
+  - text: "HIGH SIR!"
+
+  utter_health_status:
+  - text: "flip-flops working just fine! ;)"
+
+  utter_info:
+  - text: "Here are all the services and products we offer..."
+
+  utter_scalability:
+  - text: "We offer our services and products to anyone willing to spend their precious time with us! :)"
+
+  utter_acceptance:
+  - text: "Yes, we do offer services in that domain"
+
+  utter_contact_info:
+  - text: "Here is our contact information... Mob. no.: 9xxxxxxxxx, Mail-ID: xxxxxxxxx"
+
+  utter_goodbye:
+  - text: "Bye, take care!"
+
+  utter_thanks_for_the_appretiation:
+  - text: "Thank you! that means a lot!"
+
+  utter_rectify:
+  - text: "We will work on correcting our mistakes, sorry :("
+ 
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
